@@ -14,4 +14,9 @@
     };
   };
   languages.javascript.enable = true;
+
+  processes = {
+    server.exec = "cd server && node src/index.js";
+    client.exec = "cd client && npm run dev";
+  };
 }
